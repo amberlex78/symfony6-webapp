@@ -24,7 +24,7 @@ RUN git config --global user.email "you@example.com" && \
 
 # PHP Database
 RUN docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd && docker-php-ext-install pdo_mysql
-#vRUN docker-php-ext-configure pgsql --with-pgsql=/usr/local/pgsql && docker-php-ext-install pdo_pgsql
+# RUN docker-php-ext-configure pgsql --with-pgsql=/usr/local/pgsql && docker-php-ext-install pdo_pgsql
 
 # PHP Extensions
 # docker-php-ext-install sockets

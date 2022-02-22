@@ -43,5 +43,15 @@ services:
       MYSQL_DATABASE: ${DB_DATABASE}
     volumes:
       - ./data/mysql:/var/lib/mysql
+#  db:
+#    image: postgres:14.2-alpine
+#    volumes:
+#      - ./data/postgresql:/var/lib/postgresql/data
+#    environment:
+#      POSTGRES_USER: ${DB_USER}
+#      POSTGRES_PASSWORD: ${DB_PASSWORD}
+#      POSTGRES_DB: ${DB_DATABASE}
+#    ports:
+#      - '${DB_PORT}:5432'
 volumes:
   composer:
