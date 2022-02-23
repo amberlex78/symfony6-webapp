@@ -16,6 +16,10 @@ docker-down:
 
 bash:
 	docker-compose run --rm php-cli bash
+test:
+	docker-compose run --rm php-cli bin/phpunit
+router:
+	docker-compose run --rm php-cli bin/console debug:router --show-controllers
 
 #-----------------------------------------------------------
 # Setup
